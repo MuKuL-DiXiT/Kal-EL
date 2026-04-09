@@ -80,7 +80,7 @@ export function CalendarHeader({
   };
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center mt-1 w-full">
       <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
         <div className="relative" ref={monthRef}>
           <button

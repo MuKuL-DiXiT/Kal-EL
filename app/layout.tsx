@@ -41,7 +41,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
     >
-      <body className=" overflow-hidden flex flex-col items-start">{children}</body>
+      <body className="w-full overflow-hidden sm:overflow-scroll md:overflow-hidden flex flex-col items-startrt">{children}</body>
     </html>
   );
 }

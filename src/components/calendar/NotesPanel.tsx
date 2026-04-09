@@ -73,7 +73,7 @@ export function NotesPanel({
         <textarea
           value={monthNote}
           onChange={handleMonthNoteChange}
-          className="w-full h-40 sm:h-48 md:h-56 lg:h-64 p-2 sm:p-3 md:p-4 border-0 focus:outline-none focus:ring-0 resize-none bg-transparent text-xs sm:text-sm"
+          className="w-full h-16 sm:h-48 md:h-56 lg:h-64 p-1 sm:p-3 md:p-4 border-0 focus:outline-none focus:ring-0 resize-none bg-transparent text-xs sm:text-sm"
           style={{
             color: themeText,
             backgroundImage: `repeating-linear-gradient(
@@ -83,7 +83,7 @@ export function NotesPanel({
               ${lineColor} 29px
             )`,
             backgroundPosition: '0 8px',
-            lineHeight: '29px',
+            lineHeight: '24px',
             caretColor: themeText,
           }}
         />

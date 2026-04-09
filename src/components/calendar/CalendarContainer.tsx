@@ -106,9 +106,9 @@ export function CalendarContainer() {
   const bgTransitionClasses = 'transition-colors duration-500 ease-in-out';
 
   return (
-    <div className={`w-full -translate-y-45 ${theme['bg']} ${bgTransitionClasses} p-4 lg:p-8 flex items-center justify-center`}>
-      <div className="w-full max-w-4xl">
-        <div className="grid scale-70 grid-cols-1 lg:grid-cols-1 gap-6">
+    <div className={`w-full -translate-y-45 ${theme['bg']} ${bgTransitionClasses} md:p-4 lg:p-8 flex items-center justify-center`}>
+      <div className="w-full md:max-w-4xl">
+        <div className="grid sm:scale-70 grid-cols-1 lg:grid-cols-1 gap-6">
               <div className="lg:col-span-1">
             <AnimatePresence mode="wait">
               <motion.div

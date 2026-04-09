@@ -49,7 +49,7 @@ export function CalendarGrid({
         {weekdayHeaders.map((day) => (
           <div
             key={day}
-            className="flex items-center justify-center font-semibold text-xs sm:text-sm h-8 sm:h-10"
+            className="flex items-center justify-center font-semibold text-xs sm:text-sm h-6 sm:h-10"
             style={{
               color: day === 'Sat' || day === 'Sun' ? '#2667ac' : headerTextColor,
             }}
