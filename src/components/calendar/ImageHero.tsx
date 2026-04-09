@@ -25,7 +25,7 @@ export function ImageHero({ month, year }: ImageHeroProps) {
       transition={{ duration: 0.4 }}
       className="relative w-full"
     >
-      <div className="relative w-full overflow-hidden" style={{ height: '500px' }}>
+      <div className="relative w-full overflow-hidden" style={{ height: '550px' }}>
         <svg width="0" height="0" style={{ position: 'absolute' }}>
           <defs>
             <clipPath id="smooth-clip" clipPathUnits="objectBoundingBox">

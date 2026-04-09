@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-bg: #f3f4f6;
+  --color-accent: #3b82f6;
+  --color-accent-text: #1e40af;
+  --color-hero: transparent;
+  --color-border: #d1d5db;
 }
 
 @theme inline {
@@ -19,8 +24,60 @@
   }
 }
 
+/* Dark mode support */
+html.dark {
+  color-scheme: dark;
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --color-bg: #0f172a;
+  --color-accent: #3b82f6;
+  --color-accent-text: #93c5fd;
+  --color-hero: transparent;
+  --color-border: #334155;
+}
+
+html.dark body {
+  @apply bg-slate-950 text-slate-100;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Smooth transitions for theme changes */
+* {
+  @apply transition-colors duration-300;
+}
+
+/* Remove transition from specific interactive elements for snappier feel */
+button, a, input, textarea {
+  @apply transition-all duration-200;
+}
+
+/* Scrollbar styling for dark mode */
+html.dark ::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded hover:bg-slate-600;
+}
+
+/* Ensure proper contrast in dark mode */
+html.dark input,
+html.dark textarea {
+  @apply bg-slate-700 border-slate-600 text-slate-100 placeholder-slate-400;
+}
+
+html.dark input:focus,
+html.dark textarea:focus {
+  @apply border-blue-500 ring-2 ring-blue-500;
+}
+
